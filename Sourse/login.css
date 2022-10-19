@@ -1,0 +1,31 @@
+body{
+    background-color:antiquewhite;
+    display: block;
+    justify-content: center;
+}
+.wrapper{
+    margin-left: 37vw;
+    width: 25%;
+    display: block;
+    justify-content: center;
+    height: 600px;
+    background-color: #c319068c;
+    text-align: center;
+}
+.Uer{
+    margin: 10px 0px 10px 0;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 0px;
+    border: 3px solid rgb(255, 149, 0);
+    color: black;
+}
+.Pas{
+    margin: 10px 0px 10px 0;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 149, 0);
+    color: black;
+}

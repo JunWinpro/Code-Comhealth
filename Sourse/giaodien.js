@@ -10,15 +10,5 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "5.5vw 10px";
     document.getElementById("navbar").style.marginBottom = "5vw";
     document.getElementById("logo").style.fontSize = "3vw";
-  }  
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-    document.getElementById("side").style.top = "7vw";
-
-    document.getElementById("side").style.position = "fixed";
-  } else {
-    document.getElementById("side").style.position = "relative";
-    document.getElementById("side").style.left = "0vw";
   }
 }
-
-
