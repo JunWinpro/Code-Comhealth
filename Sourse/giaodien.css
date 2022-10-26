@@ -5,12 +5,12 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #B4D7FF;
+  background-color: #7738d6;
 }
 
 #navbar {
   overflow: hidden;
-  background-color: #280F91;
+  background-color: #7738d6;
   padding: 5.5vw 10px;
   transition: 0.4s;
   position: fixed;
@@ -39,13 +39,14 @@ body {
 }
 
 #navbar a:hover {
-  background-color: #4361ee;
-  color: #EEF1FF;
+  background-color: #3a1da2;
+  color: white;
 }
 
 #navbar a.active {
-  background-color: #4361ee;
-  color: #EEF1FF;
+  background-color: white;
+  font-size: 1.25vw;
+  color: black;
 }
 
 #navbar-right {
@@ -180,6 +181,5 @@ body {
 #B1B2FF
 #AAC4FF
 #D2DAFF
-#EEF1FF 
-
+#EEF1FF
 */

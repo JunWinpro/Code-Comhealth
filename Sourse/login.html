@@ -15,16 +15,43 @@
             <h1>Welcome</h1>
 
             <form class="form">
-                <input type="text" placeholder="Username" class="Uer">
+                <input type="text" placeholder=" Enter email" class="Uer" id="mail">
                 <br>
-                <input type="password" placeholder="Password" class="Pas">
+                <input type="password" placeholder=" Enter password" class="Pas" id="pass">
                 <br>
-                <button type="submit" id="login-button">Login</button>
+                <input type="submit" class="Pas" id="signUp" value="Sign Up"
+                    style="background-color: red; color:black;">
             </form>
         </div>
 
 
     </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js"></script>
 
+<script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyCNb8N2Kp5jdzy15vet0KxQgj3QeBvYIhI",
+        authDomain: "logintechtank.firebaseapp.com",
+        databaseURL: "https://logintechtank-default-rtdb.firebaseio.com",
+        projectId: "logintechtank",
+        storageBucket: "logintechtank.appspot.com",
+        messagingSenderId: "726773869569",
+        appId: "1:726773869569:web:d570b3f29c2638e05ba400",
+        measurementId: "G-EBSJ3YVY2N"
+    };
+
+    // Initialize Firebase
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+
+   
+
+</script>
+<script src="./login.js"></script>
 </html>

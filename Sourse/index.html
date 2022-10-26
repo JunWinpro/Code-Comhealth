@@ -5,7 +5,7 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+
 
   <script src="https://kit.fontawesome.com/db025c1b15.js" crossorigin="anonymous"></script>
 </head>
@@ -15,18 +15,25 @@
   <div id="navbar">
     <a href="#default" id="logo">ComHealth</a>
     <div id="navbar-right">
-      <a class="active" href="#home"><i class="fa-solid fa-house"> </i> Home</a>
+      <a id="pp" class="active" href="#home"><i class="fa-solid fa-house"> </i> Home</a>
       <a href="#home"><i class="fa-solid fa-book"></i> Class</a>
       <a href="#home"><i class="fa-solid fa-newspaper"></i> News</a>
       <a href="#home"><i class="fa-solid fa-phone"></i> </i> Contact</a>
       <a href="#about"><i class="fa-sharp fa-solid fa-circle-exclamation"></i> About</a>
+      <a href="/Code-Comhealth/Sourse/login.html"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
       <a> </a>
     </div>
   </div>
 
   <div style="margin-top:210px;padding:15px 0px 2500px;font-size:30px" class="til">
-    <h1 style="margin-bottom: 50px;">WELCOME TO <br> OUR HOMEPAGE!</h1>
+    <div style=" width: 100%;height: 1300px;">
+      <a style="font-size: 100px">Say hello to<br> <a style="color: #0ef0b8; font-size: 150px;">ComHealth.com</a></a>
+      <img src="https://assets-global.website-files.com/6257f2528a39952d4e8af286/62d7ebed9e2c923eb3b4c18b_hero-001-xl.webp" style="width: 800px;">
+    </div>
+    
     <div class="com1">
+      <img src="https://assets-global.website-files.com/6257f2528a39952d4e8af286/6257f2528a39954ae48af5bf_brainp.svg" loading="lazy" alt="Automate time tracking">
+      <h1 style="margin-bottom: 50px;">WELCOME TO <br> OUR HOMEPAGE!</h1>
       <div class="iteee1">
         <img src="https://www.makatimed.net.ph/wp-content/uploads/2020/09/1000-13.png"
           style="width: 700px; float: left; padding-right: 50px; padding-left: 20px;">
@@ -57,8 +64,37 @@
 
   </div>
 
-
-
+  <script src="index.js"></script>
 </body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+  import { getDatabase } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.12.1/auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCNb8N2Kp5jdzy15vet0KxQgj3QeBvYIhI",
+    authDomain: "logintechtank.firebaseapp.com",
+    databaseURL: "https://logintechtank-default-rtdb.firebaseio.com",
+    projectId: "logintechtank",
+    storageBucket: "logintechtank.appspot.com",
+    messagingSenderId: "726773869569",
+    appId: "1:726773869569:web:d570b3f29c2638e05ba400",
+    measurementId: "G-EBSJ3YVY2N"
+  };
+
+  // Initialize Firebase
+  const auth = getAuth();
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const databae = getDatabase(app);
+  
+</script>
 
 </html>
